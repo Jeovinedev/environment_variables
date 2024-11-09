@@ -8,8 +8,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: environment-variables.lu7su.mongodb.net
-      MONGODB_USERNAME: komazoo
-      MONGODB_PASSWORD: adm!n
+      MONGODB_USERNAME: ${{secrets.MONGODB_USERNAME}}
+      MONGODB_PASSWORD: ${{secrets.MONGODB_PASSWORD}}
       PORT: 8080
 
     runs-on: ubuntu-latest
