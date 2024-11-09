@@ -6,7 +6,8 @@ on:
       - dev
 jobs:
   test:
-    env:
+    environment: Testin #"environment defines the environment"
+    env: #env is used to define environment variables.
       MONGODB_CLUSTER_ADDRESS: environment-variables.lu7su.mongodb.net
       MONGODB_USERNAME: ${{secrets.MONGODB_USERNAME}}
       MONGODB_PASSWORD: ${{secrets.MONGODB_PASSWORD}}
